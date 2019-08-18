@@ -1,0 +1,39 @@
+uuid: eae78bd2-8fc6-4666-89c3-3e9207563205
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.group.workstation.field_workstation_shifts
+    - group.type.workstation
+  module:
+    - path
+id: group.workstation.default
+targetEntityType: group
+bundle: workstation
+mode: default
+content:
+  field_workstation_shifts:
+    weight: 31
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  label:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  uid: true

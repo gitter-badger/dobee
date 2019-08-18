@@ -1,0 +1,21 @@
+uuid: 7ca07936-1504-44a5-82c8-ac8641add1ba
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_shift_duration
+    - node.type.shift
+  module:
+    - datetime_range
+id: node.shift.field_shift_duration
+field_name: field_shift_duration
+entity_type: node
+bundle: shift
+label: 'Shift duration'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: daterange

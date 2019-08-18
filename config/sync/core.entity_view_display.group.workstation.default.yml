@@ -1,0 +1,32 @@
+uuid: 51c00d7e-9b3f-46ad-a7d0-25736a97677b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.group.workstation.field_workstation_shifts
+    - group.type.workstation
+id: group.workstation.default
+targetEntityType: group
+bundle: workstation
+mode: default
+content:
+  field_workstation_shifts:
+    weight: -4
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  label:
+    label: hidden
+    type: string
+    weight: -5
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  changed: true
+  created: true
+  uid: true

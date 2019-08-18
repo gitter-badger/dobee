@@ -25,6 +25,7 @@
         "drupal/core": "^8.7.0",
         "drupal/devel": "^2.1",
         "drupal/group": "^1.0@RC",
+        "drupal/masquerade": "^2.0@beta",
         "drupal/profile": "^1.0@RC",
         "drupal/time_range": "^1.2",
         "drush/drush": "^9.0.0",

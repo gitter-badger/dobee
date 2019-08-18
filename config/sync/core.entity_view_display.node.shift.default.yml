@@ -3,22 +3,25 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.shift.body
+    - field.field.node.shift.field_shift_duration
     - node.type.shift
   module:
-    - text
+    - datetime_range
     - user
 id: node.shift.default
 targetEntityType: node
 bundle: shift
 mode: default
 content:
-  body:
-    label: hidden
-    type: text_default
+  field_shift_duration:
     weight: 101
-    settings: {  }
+    label: above
+    settings:
+      separator: '-'
+      format_type: medium
+      timezone_override: ''
     third_party_settings: {  }
+    type: daterange_default
     region: content
   links:
     weight: 100

@@ -1,0 +1,20 @@
+uuid: 67bce2e2-2068-44e9-bb8f-c85e1d5d3354
+langcode: en
+status: true
+dependencies:
+  module:
+    - datetime_range
+    - node
+id: node.field_shift_duration
+field_name: field_shift_duration
+entity_type: node
+type: daterange
+settings:
+  datetime_type: datetime
+module: datetime_range
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

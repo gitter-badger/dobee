@@ -3,31 +3,28 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.shift.body
+    - field.field.node.shift.field_shift_duration
     - node.type.shift
   module:
     - path
-    - text
+    - time_range
 id: node.shift.default
 targetEntityType: node
 bundle: shift
 mode: default
 content:
-  body:
-    type: text_textarea_with_summary
-    weight: 121
-    settings:
-      rows: 9
-      summary_rows: 3
-      placeholder: ''
-    third_party_settings: {  }
-    region: content
   created:
     type: datetime_timestamp
     weight: 10
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_shift_duration:
+    weight: 121
+    settings: {  }
+    third_party_settings: {  }
+    type: time_range
+    region: content
   path:
     type: path
     weight: 30
