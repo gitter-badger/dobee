@@ -1,0 +1,14 @@
+uuid: f3e9784c-3bb3-46e5-942b-c3f86996b489
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.workstation
+id: workstation-manager
+label: Manager
+weight: 3
+internal: false
+audience: member
+group_type: workstation
+permissions_ui: true
+permissions: {  }

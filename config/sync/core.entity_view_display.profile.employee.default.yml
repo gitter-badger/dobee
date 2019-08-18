@@ -1,0 +1,51 @@
+uuid: 92dc65d4-8eab-43de-bdb4-b95e9a3af96e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.profile.employee.field_employee_birthdate
+    - field.field.profile.employee.field_employee_firstname
+    - field.field.profile.employee.field_employee_lastname
+    - field.field.profile.employee.field_employee_oasi
+    - profile.type.employee
+  module:
+    - datetime
+id: profile.employee.default
+targetEntityType: profile
+bundle: employee
+mode: default
+content:
+  field_employee_birthdate:
+    weight: 2
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_employee_firstname:
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_employee_lastname:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_employee_oasi:
+    weight: 3
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

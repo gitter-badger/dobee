@@ -1,0 +1,22 @@
+uuid: 4637549e-67b5-44cc-9ae0-5a0e4e080b3b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.group_content.group_roles
+    - group.content_type.workstation-group_membership
+id: group_content.workstation-group_membership.group_roles
+field_name: group_roles
+entity_type: group_content
+bundle: workstation-group_membership
+label: Roles
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'group_type:group_role'
+  handler_settings:
+    group_type_id: workstation
+field_type: entity_reference

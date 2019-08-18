@@ -1,0 +1,10 @@
+uuid: 3b14be8e-0394-4eb8-9d7b-221bd78b0361
+langcode: en
+status: true
+dependencies: {  }
+id: workstation
+label: Workstation
+description: ''
+creator_membership: false
+creator_wizard: true
+creator_roles: {  }

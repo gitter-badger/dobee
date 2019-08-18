@@ -1,0 +1,14 @@
+uuid: d9cf3ed0-4dae-4c6e-9582-acb7ac8e4f46
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.event
+id: event-member
+label: Member
+weight: -100
+internal: true
+audience: member
+group_type: event
+permissions_ui: true
+permissions: {  }

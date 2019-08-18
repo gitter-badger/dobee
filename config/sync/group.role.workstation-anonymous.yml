@@ -1,0 +1,14 @@
+uuid: b8ee5b97-0fef-42b9-9f2a-17f8034da2e6
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.workstation
+id: workstation-anonymous
+label: Anonymous
+weight: -102
+internal: true
+audience: anonymous
+group_type: workstation
+permissions_ui: true
+permissions: {  }

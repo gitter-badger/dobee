@@ -1,0 +1,17 @@
+uuid: 0daedb34-6d6f-4827-a0f6-3729b64f3272
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.workstation
+  enforced:
+    config:
+      - user.role.administrator
+id: workstation-a416e6833
+label: Administrator
+weight: 2
+internal: true
+audience: outsider
+group_type: workstation
+permissions_ui: false
+permissions: {  }

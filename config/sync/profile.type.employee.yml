@@ -1,0 +1,12 @@
+uuid: 8ec05ca4-0964-4b86-a832-55dbeb8ad13a
+langcode: en
+status: true
+dependencies: {  }
+id: employee
+label: Employee
+display_label: Employee
+multiple: false
+registration: false
+roles: {  }
+allow_revisions: false
+new_revision: false

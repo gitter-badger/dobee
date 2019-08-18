@@ -1,0 +1,18 @@
+uuid: 96903592-a774-4026-adaf-c06adfa8d2b7
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.workstation
+id: group.workstation.label
+field_name: label
+entity_type: group
+bundle: workstation
+label: Name
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

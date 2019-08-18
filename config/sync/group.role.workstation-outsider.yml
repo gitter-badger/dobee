@@ -1,0 +1,14 @@
+uuid: f2ea361f-deb9-4c4e-9a96-a7bc1c309ec0
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.workstation
+id: workstation-outsider
+label: Outsider
+weight: -101
+internal: true
+audience: outsider
+group_type: workstation
+permissions_ui: true
+permissions: {  }

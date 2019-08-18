@@ -1,0 +1,14 @@
+uuid: 0cc0ebb5-df7c-408a-b574-f65f2a4ae882
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.workstation
+id: workstation-member
+label: Member
+weight: -100
+internal: true
+audience: member
+group_type: workstation
+permissions_ui: true
+permissions: {  }

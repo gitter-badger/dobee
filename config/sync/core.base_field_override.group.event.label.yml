@@ -1,0 +1,18 @@
+uuid: b0734530-a43c-4028-bd61-31c9a8c00d36
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.event
+id: group.event.label
+field_name: label
+entity_type: group
+bundle: event
+label: Title
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

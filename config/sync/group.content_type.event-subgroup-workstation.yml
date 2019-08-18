@@ -1,0 +1,26 @@
+uuid: 6627d943-06a4-4418-9a73-bcf4ac02c26e
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.event
+    - group.type.workstation
+id: event-subgroup-workstation
+label: 'Event: Subgroup (Workstation)'
+description: 'Adds <em class="placeholder">Workstation</em> groups to groups both publicly and privately.'
+group_type: event
+content_plugin: 'subgroup:workstation'
+plugin_config:
+  group_cardinality: 0
+  entity_cardinality: 1
+  use_creation_wizard: false
+  parent_role_mapping:
+    event-a416e6833: ''
+    event-anonymous: ''
+    event-member: ''
+    event-outsider: ''
+  child_role_mapping:
+    workstation-a416e6833: ''
+    workstation-anonymous: ''
+    workstation-member: ''
+    workstation-outsider: ''

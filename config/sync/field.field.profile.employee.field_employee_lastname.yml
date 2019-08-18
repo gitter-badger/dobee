@@ -1,0 +1,19 @@
+uuid: eb261c22-a29d-4baa-85e9-4c723e855383
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_employee_lastname
+    - profile.type.employee
+id: profile.employee.field_employee_lastname
+field_name: field_employee_lastname
+entity_type: profile
+bundle: employee
+label: Lastname
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
