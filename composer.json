@@ -26,6 +26,7 @@
         "drupal/devel": "^2.1",
         "drupal/group": "^1.0@RC",
         "drupal/profile": "^1.0@RC",
+        "drupal/time_range": "^1.2",
         "drush/drush": "^9.0.0",
         "vlucas/phpdotenv": "^2.4",
         "webflo/drupal-finder": "^1.0.0",

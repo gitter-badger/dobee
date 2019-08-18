@@ -1,0 +1,28 @@
+uuid: 2f6b3459-221f-4ec7-a691-9e90c277e1b6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.shift.body
+    - node.type.shift
+  module:
+    - text
+    - user
+id: node.shift.default
+targetEntityType: node
+bundle: shift
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

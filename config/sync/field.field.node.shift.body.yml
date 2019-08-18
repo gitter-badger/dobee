@@ -1,0 +1,22 @@
+uuid: 80218600-42a5-4a92-8407-14ef066039d3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.shift
+  module:
+    - text
+id: node.shift.body
+field_name: body
+entity_type: node
+bundle: shift
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary
