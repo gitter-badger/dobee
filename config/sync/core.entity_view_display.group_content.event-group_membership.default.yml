@@ -3,13 +3,26 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.group_content.event-group_membership.field_employee_availability
     - field.field.group_content.event-group_membership.group_roles
     - group.content_type.event-group_membership
+  module:
+    - datetime_range
 id: group_content.event-group_membership.default
 targetEntityType: group_content
 bundle: event-group_membership
 mode: default
 content:
+  field_employee_availability:
+    weight: -3
+    label: above
+    settings:
+      separator: '-'
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: daterange_default
+    region: content
   group_roles:
     label: above
     type: entity_reference_label

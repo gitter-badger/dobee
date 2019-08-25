@@ -1,17 +1,17 @@
-uuid: 7ca07936-1504-44a5-82c8-ac8641add1ba
+uuid: 1587d852-37c6-4634-81a4-bd634f237530
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_shift_duration
-    - node.type.shift
+    - field.storage.shift.field_date_range
   module:
     - datetime_range
-id: node.shift.field_shift_duration
-field_name: field_shift_duration
-entity_type: node
+    - staff_shifts
+id: shift.shift.field_date_range
+field_name: field_date_range
+entity_type: shift
 bundle: shift
-label: 'Shift duration'
+label: 'Date range'
 description: ''
 required: false
 translatable: false

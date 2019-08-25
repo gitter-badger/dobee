@@ -1,0 +1,21 @@
+uuid: 332476e5-eda8-497a-a0eb-b2c3aa93545a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.group_content.field_employee_availability
+    - group.content_type.event-group_membership
+  module:
+    - datetime_range
+id: group_content.event-group_membership.field_employee_availability
+field_name: field_employee_availability
+entity_type: group_content
+bundle: event-group_membership
+label: Availability
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: daterange

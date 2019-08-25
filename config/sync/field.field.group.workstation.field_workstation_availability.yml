@@ -1,0 +1,21 @@
+uuid: 18ac12c7-6144-415d-80f8-a978353179ba
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.group.field_workstation_availability
+    - group.type.workstation
+  module:
+    - datetime
+id: group.workstation.field_workstation_availability
+field_name: field_workstation_availability
+entity_type: group
+bundle: workstation
+label: 'Workstation availability'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

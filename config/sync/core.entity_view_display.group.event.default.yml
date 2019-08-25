@@ -1,0 +1,23 @@
+uuid: 96506498-c7a9-4e96-b189-2100fcc5ad4a
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.event
+id: group.event.default
+targetEntityType: group
+bundle: event
+mode: default
+content:
+  label:
+    label: hidden
+    type: string
+    weight: -5
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  changed: true
+  created: true
+  uid: true

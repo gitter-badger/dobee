@@ -1,19 +1,19 @@
-uuid: 67bce2e2-2068-44e9-bb8f-c85e1d5d3354
+uuid: 11919dfd-8cfc-439e-96c1-e99475331ee0
 langcode: en
 status: true
 dependencies:
   module:
     - datetime_range
-    - node
-id: node.field_shift_duration
-field_name: field_shift_duration
-entity_type: node
+    - group
+id: group_content.field_employee_availability
+field_name: field_employee_availability
+entity_type: group_content
 type: daterange
 settings:
   datetime_type: datetime
 module: datetime_range
 locked: false
-cardinality: 1
+cardinality: -1
 translatable: true
 indexes: {  }
 persist_with_no_fields: false

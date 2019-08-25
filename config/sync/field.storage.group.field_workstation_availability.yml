@@ -1,17 +1,17 @@
-uuid: 73acc3ab-df98-4ace-ba24-b3832c99f18f
+uuid: a71b3bf8-d9df-4ccc-9ff5-05ddd469eb18
 langcode: en
 status: true
 dependencies:
   module:
+    - datetime
     - group
-    - node
-id: group.field_workstation_shifts
-field_name: field_workstation_shifts
+id: group.field_workstation_availability
+field_name: field_workstation_availability
 entity_type: group
-type: entity_reference
+type: datetime
 settings:
-  target_type: node
-module: core
+  datetime_type: date
+module: datetime
 locked: false
 cardinality: -1
 translatable: true

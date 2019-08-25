@@ -1,0 +1,22 @@
+uuid: d00ff62f-4ca8-4cf2-8288-379d5b058488
+langcode: en
+status: true
+dependencies:
+  module:
+    - group
+    - profile
+_core:
+  default_config_hash: f3q3i7n3zRoaqZsN7VxDIES9jYbedKBo0NBmQ13g5G4
+id: group.profile_type
+field_name: profile_type
+entity_type: group
+type: entity_reference
+settings:
+  target_type: profile_type
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: true
+custom_storage: false

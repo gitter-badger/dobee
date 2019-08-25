@@ -3,20 +3,23 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.group.workstation.field_workstation_shifts
+    - field.field.group.workstation.field_workstation_availability
     - group.type.workstation
+  module:
+    - datetime
 id: group.workstation.default
 targetEntityType: group
 bundle: workstation
 mode: default
 content:
-  field_workstation_shifts:
+  field_workstation_availability:
     weight: -4
     label: above
     settings:
-      link: true
+      timezone_override: Europe/Zurich
+      format_type: html_date
     third_party_settings: {  }
-    type: entity_reference_label
+    type: datetime_default
     region: content
   label:
     label: hidden

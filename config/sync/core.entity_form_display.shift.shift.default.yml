@@ -1,0 +1,39 @@
+uuid: 7771842f-2bc7-48e4-aee8-dc6fb2c9e987
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.shift.shift.field_date_range
+  module:
+    - staff_shifts
+    - time_range
+id: shift.shift.default
+targetEntityType: shift
+bundle: shift
+mode: default
+content:
+  field_date_range:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: time_range
+    region: content
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: false
+    weight: 1
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  description: true
+  uid: true
