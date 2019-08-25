@@ -5,8 +5,10 @@ dependencies:
   config:
     - group.type.event
     - system.menu.main
+    - user.role.authenticated
   module:
     - group
+    - user
 id: events
 label: Events
 module: views
@@ -23,8 +25,10 @@ display:
     position: 0
     display_options:
       access:
-        type: none
-        options: {  }
+        type: role
+        options:
+          role:
+            authenticated: authenticated
       cache:
         type: tag
         options: {  }
@@ -157,6 +161,7 @@ display:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url.query_args
+        - user.roles
       tags: {  }
   page_1:
     display_plugin: page
@@ -177,4 +182,5 @@ display:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url.query_args
+        - user.roles
       tags: {  }
