@@ -1,0 +1,7 @@
+entity.shift.settings:
+  path: 'admin/structure/shift'
+  defaults:
+    _form: '\Drupal\staff_shifts\Form\ShiftSettingsForm'
+    _title: 'Shift'
+  requirements:
+    _permission: 'administer shift'

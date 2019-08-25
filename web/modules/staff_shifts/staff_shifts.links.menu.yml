@@ -1,0 +1,10 @@
+entity.shift.settings:
+  title: Shift
+  description: Configure a Shift entity type
+  route_name:  entity.shift.settings
+  parent: system.admin_structure
+entity.shift.collection:
+  title: Shifts
+  description: List of shifts
+  route_name: entity.shift.collection
+  parent: system.admin_content

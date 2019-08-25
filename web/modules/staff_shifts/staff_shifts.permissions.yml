@@ -1,0 +1,13 @@
+administer shift:
+  title: 'Administer shift settings'
+  restrict access: true
+access shift overview:
+  title: 'Access shift overview page'
+delete shift:
+  title: Delete shift
+create shift:
+  title: Create shift
+view shift:
+  title: View shift
+edit shift:
+  title: Edit shift

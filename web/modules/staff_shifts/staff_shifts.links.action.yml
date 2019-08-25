@@ -1,0 +1,5 @@
+shift.add_form:
+  route_name: entity.shift.add_form
+  title: 'Add shift'
+  appears_on:
+    - entity.shift.collection

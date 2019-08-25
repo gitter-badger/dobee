@@ -1,0 +1,22 @@
+entity.shift.settings:
+  title: Settings
+  route_name: entity.shift.settings
+  base_route: entity.shift.settings
+entity.shift.view:
+  title: View
+  route_name: entity.shift.canonical
+  base_route: entity.shift.canonical
+entity.shift.edit_form:
+  title: Edit
+  route_name: entity.shift.edit_form
+  base_route: entity.shift.canonical
+entity.shift.delete_form:
+  title: Delete
+  route_name: entity.shift.delete_form
+  base_route: entity.shift.canonical
+  weight: 10
+entity.shift.collection:
+  title: Shift
+  route_name: entity.shift.collection
+  base_route: system.admin_content
+  weight: 10
