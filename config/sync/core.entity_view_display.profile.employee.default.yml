@@ -7,6 +7,7 @@ dependencies:
     - field.field.profile.employee.field_employee_firstname
     - field.field.profile.employee.field_employee_lastname
     - field.field.profile.employee.field_employee_oasi
+    - field.field.profile.employee.field_wage_hour
     - profile.type.employee
   module:
     - datetime
@@ -47,5 +48,16 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     type: string
+    region: content
+  field_wage_hour:
+    weight: 4
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
     region: content
 hidden: {  }

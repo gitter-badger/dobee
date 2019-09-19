@@ -1,0 +1,23 @@
+uuid: 15b26f6f-26da-4312-8a58-373b9a9daac7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_wage_hour
+    - profile.type.employee
+id: profile.employee.field_wage_hour
+field_name: field_wage_hour
+entity_type: profile
+bundle: employee
+label: Wage/Hour
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: 'CHF '
+  suffix: ''
+field_type: float

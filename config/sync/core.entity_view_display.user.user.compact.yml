@@ -16,11 +16,6 @@ targetEntityType: user
 bundle: user
 mode: compact
 content:
-  masquerade:
-    weight: 50
-    settings: {  }
-    third_party_settings: {  }
-    region: content
   user_picture:
     type: image
     weight: 0
@@ -31,5 +26,4 @@ content:
     third_party_settings: {  }
     label: hidden
 hidden:
-  employee_profiles: true
   member_for: true
