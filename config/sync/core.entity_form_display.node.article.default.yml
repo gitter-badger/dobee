@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.article.body
     - field.field.node.article.field_image
     - field.field.node.article.field_tags
+    - field.field.node.article.field_test
     - image.style.thumbnail
     - node.type.article
   module:
@@ -51,6 +52,12 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  field_test:
+    weight: 121
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
   path:
     type: path
     weight: 30

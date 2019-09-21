@@ -1,0 +1,23 @@
+uuid: 4d87f1f0-bc27-4585-a31a-0081914d7e06
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.content_type.workstation-group_node-shiftplan
+id: group_content.workstation-group_node-shiftplan.default
+targetEntityType: group_content
+bundle: workstation-group_node-shiftplan
+mode: default
+content:
+  entity_id:
+    type: entity_reference_autocomplete
+    weight: 0
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    region: content
+    third_party_settings: {  }
+hidden:
+  path: true
+  uid: true

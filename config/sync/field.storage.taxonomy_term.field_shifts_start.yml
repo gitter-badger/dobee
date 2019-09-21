@@ -1,0 +1,19 @@
+uuid: e29a06c8-aad0-453c-a183-6c6d5c4eea60
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+    - time_field
+id: taxonomy_term.field_shifts_start
+field_name: field_shifts_start
+entity_type: taxonomy_term
+type: time
+settings: {  }
+module: time_field
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

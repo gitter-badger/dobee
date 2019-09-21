@@ -1,0 +1,28 @@
+uuid: 24e8faf7-f65f-449d-972c-7a109553525a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_shiftplan_assignee
+    - node.type.shiftplan
+id: node.shiftplan.field_shiftplan_assignee
+field_name: field_shiftplan_assignee
+entity_type: node
+bundle: shiftplan
+label: Assignee
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    include_anonymous: false
+    filter:
+      type: _none
+    target_bundles: null
+    sort:
+      field: _none
+    auto_create: false
+field_type: entity_reference

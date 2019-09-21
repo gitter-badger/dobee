@@ -1,0 +1,21 @@
+uuid: 14cdff28-9733-460a-b342-dd16a3895103
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_shiftplan_time
+    - node.type.shiftplan
+  module:
+    - datetime_range
+id: node.shiftplan.field_shiftplan_time
+field_name: field_shiftplan_time
+entity_type: node
+bundle: shiftplan
+label: 'Shift time'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: daterange

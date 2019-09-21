@@ -1,16 +1,15 @@
-uuid: b40bf726-904b-40d6-8a02-b0ad64eba776
+uuid: 907cafc8-faf8-4deb-b138-8cb3e4e1fc16
 langcode: en
 status: true
 dependencies:
   config:
-    - group.type.event
-    - system.menu.main
-    - user.role.authenticated
+    - user.role.administrator
+    - user.role.organizer
   module:
     - group
     - user
-id: events
-label: Events
+id: workstations
+label: Workstations
 module: views
 description: ''
 tag: ''
@@ -28,7 +27,8 @@ display:
         type: role
         options:
           role:
-            authenticated: authenticated
+            administrator: administrator
+            organizer: organizer
       cache:
         type: tag
         options: {  }
@@ -69,21 +69,18 @@ display:
             previous: ‹‹
             next: ››
       style:
-        type: grid
+        type: table
       row:
-        type: 'entity:group'
+        type: fields
       fields:
         label:
+          id: label
           table: groups_field_data
           field: label
-          id: label
-          entity_type: null
-          entity_field: label
-          plugin_id: field
           relationship: none
           group_type: group
           admin_label: ''
-          label: ''
+          label: Title
           exclude: false
           alter:
             alter_text: false
@@ -126,7 +123,8 @@ display:
           hide_alter_empty: true
           click_sort_column: value
           type: string
-          settings: {  }
+          settings:
+            link_to_entity: true
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -137,19 +135,77 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-      filters:
-        type:
-          id: type
-          table: groups_field_data
-          field: type
-          value:
-            event: event
+          entity_type: null
+          entity_field: label
+          plugin_id: field
+        operations:
+          id: operations
+          table: groups
+          field: operations
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: actions
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          destination: false
           entity_type: group
-          entity_field: type
-          plugin_id: bundle
+          plugin_id: entity_operations
+      filters: {  }
       sorts: {  }
-      title: Events
-      header: {  }
+      title: Workstations
+      header:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: false
+          content:
+            value: '<p><a href="/group/add/workstation">Add Workstation</a></p>'
+            format: basic_html
+          plugin_id: text
       footer: {  }
       empty: {  }
       relationships: {  }
@@ -166,16 +222,12 @@ display:
   page_1:
     display_plugin: page
     id: page_1
-    display_title: Page
+    display_title: Workstations
     position: 1
     display_options:
       display_extenders: {  }
-      path: events
-      menu:
-        type: normal
-        title: Events
-        menu_name: main
-        weight: -49
+      path: workstations
+      display_description: ''
     cache_metadata:
       max-age: -1
       contexts:

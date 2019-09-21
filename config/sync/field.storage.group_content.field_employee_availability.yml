@@ -1,17 +1,60 @@
-uuid: 11919dfd-8cfc-439e-96c1-e99475331ee0
+uuid: 835edb50-1240-4338-9b51-87fc9f580973
 langcode: en
 status: true
 dependencies:
   module:
-    - datetime_range
     - group
+    - options
 id: group_content.field_employee_availability
 field_name: field_employee_availability
 entity_type: group_content
-type: daterange
+type: list_string
 settings:
-  datetime_type: datetime
-module: datetime_range
+  allowed_values:
+    -
+      value: 11.09.2019
+      label: 11.09.2019
+    -
+      value: 12.09.2019
+      label: 12.09.2019
+    -
+      value: 13.09.2019
+      label: 13.09.2019
+    -
+      value: 14.09.2019
+      label: 14.09.2019
+    -
+      value: 15.09.2019
+      label: 15.09.2019
+    -
+      value: 16.09.2019
+      label: 16.09.2019
+    -
+      value: 17.09.2019
+      label: 17.09.2019
+    -
+      value: 18.09.2019
+      label: 18.09.2019
+    -
+      value: 19.09.2019
+      label: 19.09.2019
+    -
+      value: 20.09.2019
+      label: 20.09.2019
+    -
+      value: 21.09.2019
+      label: 21.09.2019
+    -
+      value: 22.09.2019
+      label: 22.09.2019
+    -
+      value: 23.09.2019
+      label: 23.09.2019
+    -
+      value: 24.09.2019
+      label: 24.09.2019
+  allowed_values_function: ''
+module: options
 locked: false
 cardinality: -1
 translatable: true

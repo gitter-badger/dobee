@@ -1,0 +1,47 @@
+uuid: 5e81425f-e34c-4533-8908-785de6beebe1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.shiftplan.field_shiftplan_assignee
+    - field.field.node.shiftplan.field_shiftplan_time
+    - field.field.node.shiftplan.field_shiftplan_workstation
+    - node.type.shiftplan
+  module:
+    - datetime_range
+id: node.shiftplan.default
+targetEntityType: node
+bundle: shiftplan
+mode: default
+content:
+  field_shiftplan_assignee:
+    weight: 2
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_shiftplan_time:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: daterange_default
+    region: content
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  field_shiftplan_workstation: true
+  path: true
+  promote: true
+  status: true
+  sticky: true
+  uid: true

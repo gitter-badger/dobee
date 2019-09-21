@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.group.event.field_field_event_dates
     - group.type.event
 id: group.event.default
 targetEntityType: group
@@ -12,7 +13,7 @@ content:
   label:
     label: hidden
     type: string
-    weight: -5
+    weight: 0
     region: content
     settings:
       link_to_entity: false
@@ -20,4 +21,5 @@ content:
 hidden:
   changed: true
   created: true
+  field_field_event_dates: true
   uid: true

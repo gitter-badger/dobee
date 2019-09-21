@@ -1,0 +1,22 @@
+uuid: 8b9e5108-40cd-4998-a504-d19e8ac56631
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.shiftplan.field_shiftplan_time
+    - node.type.shiftplan
+  module:
+    - user
+id: node.shiftplan.teaser
+targetEntityType: node
+bundle: shiftplan
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_shiftplan_time: true

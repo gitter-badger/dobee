@@ -1,0 +1,15 @@
+uuid: 4f27183e-7876-4371-8096-85e0d5fa9c78
+langcode: en
+status: true
+dependencies: {  }
+id: organizer
+label: Organizer
+weight: 3
+is_admin: null
+permissions:
+  - 'access profile overview'
+  - 'access user profiles'
+  - 'administer users'
+  - 'bypass group access'
+  - 'update any employee profile'
+  - 'view any employee profile'

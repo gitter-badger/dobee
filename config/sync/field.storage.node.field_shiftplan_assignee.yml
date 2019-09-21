@@ -1,0 +1,20 @@
+uuid: a2f81378-6a02-4d9b-98c7-c2c0fcf5cdb9
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - user
+id: node.field_shiftplan_assignee
+field_name: field_shiftplan_assignee
+entity_type: node
+type: entity_reference
+settings:
+  target_type: user
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

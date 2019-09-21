@@ -3,14 +3,22 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.group.event.field_field_event_dates
     - group.type.event
   module:
+    - datetime_range
     - path
 id: group.event.default
 targetEntityType: group
 bundle: event
 mode: default
 content:
+  field_field_event_dates:
+    weight: 31
+    settings: {  }
+    third_party_settings: {  }
+    type: daterange_default
+    region: content
   label:
     type: string_textfield
     weight: -5

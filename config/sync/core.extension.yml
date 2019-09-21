@@ -26,6 +26,7 @@ module:
   history: 0
   image: 0
   link: 0
+  mail_login: 0
   masquerade: 0
   menu_ui: 0
   node: 0
@@ -37,10 +38,11 @@ module:
   rdf: 0
   search: 0
   shortcut: 0
-  staff_shifts: 0
+  staff_employee_group: 0
   system: 0
   taxonomy: 0
   text: 0
+  time_field: 0
   time_range: 0
   toolbar: 0
   tour: 0

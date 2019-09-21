@@ -5,26 +5,15 @@ dependencies:
   config:
     - field.field.group.workstation.field_workstation_availability
     - group.type.workstation
-  module:
-    - datetime
 id: group.workstation.default
 targetEntityType: group
 bundle: workstation
 mode: default
 content:
-  field_workstation_availability:
-    weight: -4
-    label: above
-    settings:
-      timezone_override: Europe/Zurich
-      format_type: html_date
-    third_party_settings: {  }
-    type: datetime_default
-    region: content
   label:
     label: hidden
     type: string
-    weight: -5
+    weight: 0
     region: content
     settings:
       link_to_entity: false
@@ -32,4 +21,5 @@ content:
 hidden:
   changed: true
   created: true
+  field_workstation_availability: true
   uid: true

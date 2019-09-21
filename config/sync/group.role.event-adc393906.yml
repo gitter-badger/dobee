@@ -1,0 +1,17 @@
+uuid: 7c87ccdf-35f9-403f-9c01-e1d1d276a9cc
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.event
+  enforced:
+    config:
+      - user.role.organizer
+id: event-adc393906
+label: Organizer
+weight: 3
+internal: true
+audience: outsider
+group_type: event
+permissions_ui: false
+permissions: {  }

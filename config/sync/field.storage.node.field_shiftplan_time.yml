@@ -1,0 +1,20 @@
+uuid: f5125ce5-440f-4bd2-9308-49e889ee872c
+langcode: en
+status: true
+dependencies:
+  module:
+    - datetime_range
+    - node
+id: node.field_shiftplan_time
+field_name: field_shiftplan_time
+entity_type: node
+type: daterange
+settings:
+  datetime_type: datetime
+module: datetime_range
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

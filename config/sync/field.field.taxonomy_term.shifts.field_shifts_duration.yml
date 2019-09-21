@@ -1,0 +1,23 @@
+uuid: 6e32eab8-2f02-4cb5-af49-9aca81c1c453
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_shifts_duration
+    - taxonomy.vocabulary.shifts
+id: taxonomy_term.shifts.field_shifts_duration
+field_name: field_shifts_duration
+entity_type: taxonomy_term
+bundle: shifts
+label: Duration
+description: 'The duration of the shift in minutes'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

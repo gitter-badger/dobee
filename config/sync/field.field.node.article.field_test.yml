@@ -1,0 +1,21 @@
+uuid: cd7d3399-c5de-4f5c-9311-e104c1b5a1c3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_test
+    - node.type.article
+  module:
+    - options
+id: node.article.field_test
+field_name: field_test
+entity_type: node
+bundle: article
+label: test
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

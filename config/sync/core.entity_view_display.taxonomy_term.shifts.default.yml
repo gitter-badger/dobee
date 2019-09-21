@@ -1,0 +1,41 @@
+uuid: 8586ce38-56e9-4484-b7c4-d59e58189cd7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.shifts.field_shifts_duration
+    - field.field.taxonomy_term.shifts.field_shifts_start
+    - taxonomy.vocabulary.shifts
+  module:
+    - text
+    - time_field
+id: taxonomy_term.shifts.default
+targetEntityType: taxonomy_term
+bundle: shifts
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_shifts_duration:
+    weight: 2
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_shifts_start:
+    weight: 1
+    label: above
+    settings:
+      time_format: 'h:i a'
+    third_party_settings: {  }
+    type: time_formatter
+    region: content
+hidden: {  }

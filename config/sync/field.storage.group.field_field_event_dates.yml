@@ -1,13 +1,13 @@
-uuid: 7fd452d9-a9d1-4312-a3f2-db591b0fb7b2
+uuid: b5b93bad-3548-4175-9d82-10c30158e323
 langcode: en
 status: true
 dependencies:
   module:
     - datetime_range
-    - staff_shifts
-id: shift.field_date_range
-field_name: field_date_range
-entity_type: shift
+    - group
+id: group.field_field_event_dates
+field_name: field_field_event_dates
+entity_type: group
 type: daterange
 settings:
   datetime_type: date

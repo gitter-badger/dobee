@@ -1,0 +1,21 @@
+uuid: f1ef5eb2-d316-476b-b6a5-3890c843fc9d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_shifts_start
+    - taxonomy.vocabulary.shifts
+  module:
+    - time_field
+id: taxonomy_term.shifts.field_shifts_start
+field_name: field_shifts_start
+entity_type: taxonomy_term
+bundle: shifts
+label: 'Start time'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: time

@@ -1,0 +1,17 @@
+uuid: 747e2ac3-39b4-4f69-9f81-53728c579065
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.workstation
+  enforced:
+    config:
+      - user.role.organizer
+id: workstation-adc393906
+label: Organizer
+weight: 3
+internal: true
+audience: outsider
+group_type: workstation
+permissions_ui: false
+permissions: {  }

@@ -4,10 +4,10 @@ status: true
 dependencies:
   config:
     - field.field.group_content.event-group_membership.field_employee_availability
+    - field.field.group_content.event-group_membership.field_event_member_status
     - field.field.group_content.event-group_membership.group_roles
     - group.content_type.event-group_membership
   module:
-    - datetime_range
     - path
 id: group_content.event-group_membership.default
 targetEntityType: group_content
@@ -24,10 +24,16 @@ content:
     region: content
     third_party_settings: {  }
   field_employee_availability:
-    weight: 32
+    weight: 33
     settings: {  }
     third_party_settings: {  }
-    type: daterange_default
+    type: options_buttons
+    region: content
+  field_event_member_status:
+    weight: 34
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
     region: content
   group_roles:
     type: options_buttons

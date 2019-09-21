@@ -1,0 +1,28 @@
+uuid: 4adbcf77-8a37-4189-9cbd-13ce4e398175
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_shiftplan_workstation
+    - group.type.workstation
+    - node.type.shiftplan
+id: node.shiftplan.field_shiftplan_workstation
+field_name: field_shiftplan_workstation
+entity_type: node
+bundle: shiftplan
+label: 'shiftplan workstation'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:group'
+  handler_settings:
+    target_bundles:
+      workstation: workstation
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -4,24 +4,29 @@ status: true
 dependencies:
   config:
     - field.field.group_content.event-group_membership.field_employee_availability
+    - field.field.group_content.event-group_membership.field_event_member_status
     - field.field.group_content.event-group_membership.group_roles
     - group.content_type.event-group_membership
   module:
-    - datetime_range
+    - options
 id: group_content.event-group_membership.default
 targetEntityType: group_content
 bundle: event-group_membership
 mode: default
 content:
   field_employee_availability:
-    weight: -3
+    weight: -2
     label: above
-    settings:
-      separator: '-'
-      format_type: medium
-      timezone_override: ''
+    settings: {  }
     third_party_settings: {  }
-    type: daterange_default
+    type: list_default
+    region: content
+  field_event_member_status:
+    weight: -1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
     region: content
   group_roles:
     label: above

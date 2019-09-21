@@ -1,0 +1,8 @@
+uuid: d8082883-49a8-4ed4-97cd-26fa04898c9f
+langcode: en
+status: true
+dependencies: {  }
+name: Shifts
+vid: shifts
+description: ''
+weight: 0

@@ -1,0 +1,19 @@
+uuid: 1ec8e454-51ee-43ea-89cf-bb07373bc784
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.workstation
+    - node.type.shiftplan
+  module:
+    - gnode
+    - node
+id: workstation-group_node-shiftplan
+label: 'Workstation: Group node (Shiftplan)'
+description: 'Adds <em class="placeholder">Shiftplan</em> content to groups both publicly and privately.'
+group_type: workstation
+content_plugin: 'group_node:shiftplan'
+plugin_config:
+  group_cardinality: 0
+  entity_cardinality: 1
+  use_creation_wizard: false
