@@ -1,0 +1,7 @@
+staff_employee_group.workstation_plan.overview:
+  #path /group/{group}/worstation-plan
+  route_name: view.workstation_plan.overview
+  base_route: entity.group.canonical
+  title: 'Shift plan'
+
+  #TODO: hide on other nodes https://drupal.stackexchange.com/questions/201320/add-a-local-task-tab-for-a-content-type-only
