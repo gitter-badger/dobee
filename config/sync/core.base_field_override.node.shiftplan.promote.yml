@@ -1,0 +1,22 @@
+uuid: 666dbac0-e672-4dd7-941b-19789bdf67ee
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.shiftplan
+id: node.shiftplan.promote
+field_name: promote
+entity_type: node
+bundle: shiftplan
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

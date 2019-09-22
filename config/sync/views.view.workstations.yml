@@ -219,9 +219,9 @@ display:
         - url.query_args
         - user.roles
       tags: {  }
-  page_1:
+  all:
     display_plugin: page
-    id: page_1
+    id: all
     display_title: Workstations
     position: 1
     display_options:

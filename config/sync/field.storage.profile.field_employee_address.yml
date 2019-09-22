@@ -1,0 +1,21 @@
+uuid: 514cf8df-2ce5-4e21-8374-acb5f346d8f9
+langcode: en
+status: true
+dependencies:
+  module:
+    - profile
+id: profile.field_employee_address
+field_name: field_employee_address
+entity_type: profile
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

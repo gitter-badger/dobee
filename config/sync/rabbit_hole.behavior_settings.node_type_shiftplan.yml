@@ -1,0 +1,11 @@
+uuid: cff1ea07-6342-4eb5-91d9-ca722c5aa8b4
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.shiftplan
+id: node_type_shiftplan
+action: access_denied
+allow_override: 0
+redirect: ''
+redirect_code: 301

@@ -3,10 +3,13 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.profile.employee.field_employee_address
     - field.field.profile.employee.field_employee_birthdate
     - field.field.profile.employee.field_employee_firstname
     - field.field.profile.employee.field_employee_lastname
     - field.field.profile.employee.field_employee_oasi
+    - field.field.profile.employee.field_employee_plz
+    - field.field.profile.employee.field_employee_town
     - field.field.profile.employee.field_wage_hour
     - profile.type.employee
   module:
@@ -16,6 +19,14 @@ targetEntityType: profile
 bundle: employee
 mode: default
 content:
+  field_employee_address:
+    weight: 33
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
   field_employee_birthdate:
     weight: 28
     settings: {  }
@@ -46,6 +57,21 @@ content:
     third_party_settings: {  }
     type: string_textfield
     region: content
+  field_employee_plz:
+    weight: 32
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_employee_town:
+    weight: 34
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
   field_wage_hour:
     weight: 30
     settings:
@@ -53,4 +79,5 @@ content:
     third_party_settings: {  }
     type: number
     region: content
-hidden: {  }
+hidden:
+  is_default: true
