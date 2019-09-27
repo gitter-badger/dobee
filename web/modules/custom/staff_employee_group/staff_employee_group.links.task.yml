@@ -4,4 +4,10 @@ staff_employee_group.workstation_plan.overview:
   base_route: entity.group.canonical
   title: 'Shift plan'
 
+staff_employee_group.workstations.workstations_by_group:
+  #path /group/{group}/worstation-plan
+  route_name: view.workstations.workstations_by_group
+  base_route: entity.group.canonical
+  title: 'Workstations'
+
   #TODO: hide on other nodes https://drupal.stackexchange.com/questions/201320/add-a-local-task-tab-for-a-content-type-only
