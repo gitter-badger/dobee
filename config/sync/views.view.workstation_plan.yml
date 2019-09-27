@@ -6,14 +6,12 @@ dependencies:
     - field.storage.node.field_shiftplan_assignee
     - field.storage.node.field_shiftplan_time
     - node.type.shiftplan
-    - user.role.administrator
-    - user.role.organizer
   module:
     - datetime
     - datetime_range
     - group
     - node
-    - user
+    - staff_manager_group
 id: workstation_plan
 label: 'Workstation plan'
 module: views
@@ -30,11 +28,8 @@ display:
     position: 0
     display_options:
       access:
-        type: role
-        options:
-          role:
-            administrator: administrator
-            organizer: organizer
+        type: WorkstationManager
+        options: {  }
       cache:
         type: tag
         options: {  }
@@ -279,7 +274,20 @@ display:
       title: 'Workstation plan'
       header: {  }
       footer: {  }
-      empty: {  }
+      empty:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: true
+          tokenize: false
+          content:
+            value: 'No shifts have been assigned to this location.'
+            format: basic_html
+          plugin_id: text
       relationships:
         group_content:
           id: group_content
@@ -303,7 +311,7 @@ display:
           relationship: group_content
           group_type: group
           admin_label: ''
-          default_action: 'access denied'
+          default_action: default
           exception:
             value: ''
             title_enable: false
@@ -341,7 +349,6 @@ display:
         - route
         - url
         - 'user.node_grants:view'
-        - user.roles
       tags:
         - 'config:field.storage.node.field_shiftplan_assignee'
         - 'config:field.storage.node.field_shiftplan_time'
@@ -361,7 +368,6 @@ display:
         - route
         - url
         - 'user.node_grants:view'
-        - user.roles
       tags:
         - 'config:field.storage.node.field_shiftplan_assignee'
         - 'config:field.storage.node.field_shiftplan_time'

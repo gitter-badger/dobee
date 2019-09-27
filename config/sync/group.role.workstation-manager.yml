@@ -11,4 +11,7 @@ internal: false
 audience: member
 group_type: workstation
 permissions_ui: true
-permissions: {  }
+permissions:
+  - 'update any group_node:shiftplan entity'
+  - 'view group'
+  - 'view group_node:shiftplan entity'
