@@ -1,14 +1,1 @@
 <?php
-/**
- * Implements hook_menu_local_tasks_alter
- */
-function staff_employee_group_menu_local_tasks_alter (&$data, $route_name, \Drupal\Core\Cache\RefinableCacheableDependencyInterface &$cacheability) {
-    \Drupal::logger('debug')->debug('debug');
-}
-
-/**
- * Implements hook_menu_local_actions_alter
- */
-function staff_employee_group_menu_local_actions_alter(&$local_actions) {
-    \Drupal::logger('debug')->debug('debug');
-}

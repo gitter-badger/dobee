@@ -1,0 +1,5 @@
+name: Manager Groups
+type: module
+description: 'Provides helpers for manager groups'
+package: staff
+core: 8.x
