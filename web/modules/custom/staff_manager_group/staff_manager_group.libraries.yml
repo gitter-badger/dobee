@@ -1,0 +1,7 @@
+modal_library:
+  version: 1.x
+  css: []
+  js: []
+  dependencies:
+    - 'core/jquery.form'
+    - 'core/drupal.dialog.ajax'
