@@ -1,0 +1,6 @@
+staff_manager_group.add_shift_assegnee:
+  path: 'group/{group}/node/{node}/user/{user}/assign-shift'
+  defaults:
+    _controller: '\Drupal\staff_manager_group\Controller\AssignShifts::assign'
+  requirements:
+    _custom_access: '\Drupal\staff_manager_group\Controller\AccessController::access'
