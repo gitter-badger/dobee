@@ -1,0 +1,21 @@
+uuid: d2623a7f-e6ac-459b-a522-49e92954598d
+langcode: en
+status: true
+dependencies:
+  module:
+    - group
+  theme:
+    - bulma
+id: groupoperations
+theme: bulma
+region: sidebar_first
+weight: 0
+provider: null
+plugin: group_operations
+settings:
+  id: group_operations
+  label: 'Group operations'
+  provider: group
+  label_display: visible
+  context_mapping: {  }
+visibility: {  }
