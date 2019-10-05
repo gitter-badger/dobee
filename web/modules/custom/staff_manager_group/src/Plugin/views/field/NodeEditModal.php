@@ -47,12 +47,13 @@
     public function render(ResultRow $values)
     {
         $node = $values->_entity;
+        $rel_group = $values->_relationship_entities['group_content']->getGroup()->id();
         if ($node->bundle() == $this->options['node_type'])
         {
-            return array('#markup'=>'<a href="/group/3/node/'.$node->id().'/assign-shift"
+            return array('#markup'=>'<a href="/group/'.$rel_group.'/node/'.$node->id().'/assign-shift"
                         class="use-ajax"
                         data-dialog-type="modal">
-                        Edit Node
+                        Assign
                         </a>',
                     '#attached'=>array('library'=>
                         array('staff_manager_group/modal_library')

@@ -32,6 +32,7 @@
         "drupal/rabbit_hole": "^1.0@beta",
         "drupal/time_field": "^1.12",
         "drupal/time_range": "^1.2",
+        "drupal/webform": "^5.4",
         "drush/drush": "^9.0.0",
         "vlucas/phpdotenv": "^2.4",
         "webflo/drupal-core-require-dev": "^8.7",
@@ -91,6 +92,10 @@
         "patches":{
             "drupal/group": {
                 "Add subgroup functionality":"https://www.drupal.org/files/issues/2019-08-14/port-subgroups-2736233-254.patch"
+            },
+            "drupal/core":
+            {
+                "Hide tabs when validator is 404 or 403":"https://www.drupal.org/files/issues/2018-10-09/views-args-access-2778345-35.patch"
             }
         }
     }

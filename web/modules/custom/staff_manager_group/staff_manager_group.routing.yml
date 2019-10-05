@@ -4,3 +4,10 @@ staff_manager_group.add_shift_assegnee:
     _controller: '\Drupal\staff_manager_group\Controller\AssignShifts::assign'
   requirements:
     _custom_access: '\Drupal\staff_manager_group\Controller\AccessController::access'
+
+staff_manager_group.add_shift:
+  path: 'group/{group}/add-shifts'
+  defaults:
+    _form: '\Drupal\staff_manager_group\Form\ShiftsCreateForm'
+  requirements:
+    _role: 'organizer'

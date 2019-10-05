@@ -1,0 +1,5 @@
+staff_manager_group.workstation.add_shifts:
+  route_name: staff_manager_group.add_shift
+  title: Add shifts
+  appears_on:
+    - view.workstation_plan.overview

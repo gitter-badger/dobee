@@ -1,1 +1,11 @@
 <?php
+
+use Drupal\Core\Form\FormStateInterface;
+
+function staff_employee_group_webform_element_alter(array &$element, FormStateInterface $form_state, array $context)
+{
+    if(isset($element['#webform_id']) && $element['#webform_id'] === 'user_registration--email')
+    {
+        $element['#element_validate'][] = array ('Drupal\staff_employee_group\Validate\UserEmailValidation','validate');
+    }
+}
