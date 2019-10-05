@@ -1,0 +1,8 @@
+uuid: 5af1a3b7-267c-4ff0-8fee-a015f73dd963
+langcode: en
+status: true
+dependencies: {  }
+id: workstation-menu
+label: 'Workstation menu'
+description: ''
+locked: false

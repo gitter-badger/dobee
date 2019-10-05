@@ -1,0 +1,8 @@
+uuid: f589dc30-d602-4d2c-a613-df40aac69ae7
+langcode: en
+status: true
+dependencies: {  }
+id: event-menu
+label: 'Event menu'
+description: ''
+locked: false

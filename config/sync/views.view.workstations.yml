@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - group.type.event
     - group.type.workstation
     - user.role.administrator
     - user.role.organizer
@@ -391,11 +392,16 @@ display:
             sort_order: asc
             number_of_records: 0
             format: default_summary
-          specify_validation: false
+          specify_validation: true
           validate:
-            type: none
+            type: 'entity:group'
             fail: 'not found'
-          validate_options: {  }
+          validate_options:
+            bundles:
+              event: event
+            operation: view
+            multiple: 0
+            access: false
           break_phrase: false
           not: false
           entity_type: group_content
@@ -403,6 +409,15 @@ display:
           plugin_id: group_id
       defaults:
         arguments: false
+      menu:
+        type: tab
+        title: Workstations
+        description: ''
+        expanded: false
+        parent: ''
+        weight: 0
+        context: '0'
+        menu_name: event-menu
     cache_metadata:
       max-age: -1
       contexts:

@@ -1,0 +1,18 @@
+uuid: 0f6a0f4b-9d64-4a20-8508-ecc81fa97779
+langcode: en
+status: true
+dependencies:
+  theme:
+    - bulma
+id: primaryadminactions
+theme: bulma
+region: sidebar_first
+weight: -6
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

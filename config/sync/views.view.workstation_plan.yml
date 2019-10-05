@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.storage.node.field_shiftplan_assignee
     - field.storage.node.field_shiftplan_time
+    - group.type.workstation
     - node.type.shiftplan
   module:
     - datetime
@@ -286,7 +287,7 @@ display:
           empty: ''
           hide_empty: false
           empty_zero: false
-          hide_alter_empty: true
+          hide_alter_empty: false
           click_sort_column: target_id
           type: entity_reference_label
           settings:
@@ -447,11 +448,16 @@ display:
             sort_order: asc
             number_of_records: 0
             format: default_summary
-          specify_validation: false
+          specify_validation: true
           validate:
-            type: none
-            fail: 'not found'
-          validate_options: {  }
+            type: 'entity:group'
+            fail: 'access denied'
+          validate_options:
+            bundles:
+              workstation: workstation
+            operation: view
+            multiple: 0
+            access: false
           break_phrase: false
           not: false
           entity_type: group_content
@@ -477,6 +483,20 @@ display:
     display_options:
       display_extenders: {  }
       path: group/%group/workstation-plan
+      menu:
+        type: tab
+        title: 'Workstation plan'
+        description: ''
+        expanded: false
+        parent: ''
+        weight: 0
+        context: '0'
+        menu_name: workstation-menu
+      tab_options:
+        type: none
+        title: ''
+        description: ''
+        weight: 0
     cache_metadata:
       max-age: -1
       contexts:
