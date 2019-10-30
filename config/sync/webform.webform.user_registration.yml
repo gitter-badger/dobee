@@ -1,9 +1,7 @@
 uuid: cd3512c5-5fbb-48ab-90ae-c8430e2a48c3
 langcode: en
 status: open
-dependencies:
-  module:
-    - staff_employee_group
+dependencies: {  }
 open: null
 close: null
 weight: 0
@@ -14,7 +12,7 @@ id: user_registration
 title: 'user registration'
 description: ''
 category: 'Functional forms'
-elements: "page_1:\n  '#type': webform_wizard_page\n  '#title': 'Page 1'\n  '#open': true\n  '#prev_button_label': '< Back '\n  '#next_button_label': 'Next >'\n  email:\n    '#type': email\n    '#title': Email\n    '#required': true\n    '#required_error': 'An email is required'\npage_2:\n  '#type': webform_wizard_page\n  '#title': 'Page 2'\n  '#open': true\n  '#prev_button_label': '< Back'\n  '#next_button_label': 'Next >'\n  password:\n    '#type': dobee_password_element\n    '#title': Password\npage_3:\n  '#type': webform_wizard_page\n  '#title': 'Page 3'\n  '#open': true\n  '#prev_button_label': '< Back'\n  '#next_button_label': 'Next >'\n  firstname:\n    '#type': textfield\n    '#title': Firstname\n  lastname:\n    '#type': textfield\n    '#title': Lastname\n  address:\n    '#type': textfield\n    '#title': Address\n  plz:\n    '#type': number\n    '#title': PLZ\n    '#minlength': '4'\n    '#maxlength': '4'\n    '#min': '1000'\n    '#max': '9993'\n    '#step': '1'\n  town:\n    '#type': textfield\n    '#title': Town"
+elements: "page_1:\n  '#type': webform_wizard_page\n  '#title': 'Page 1'\n  '#open': true\n  '#prev_button_label': '< Back '\n  '#next_button_label': 'Next >'\n  email:\n    '#type': email\n    '#title': Email\n    '#required': true\n    '#required_error': 'An email is required'\npage_2:\n  '#type': webform_wizard_page\n  '#title': 'Page 2'\n  '#open': true\n  '#prev_button_label': '< Back'\n  '#next_button_label': 'Next >'\n  password:\n    '#type': dobee_password_element\n    '#title': Password\n    '#multiple': false\npage_3:\n  '#type': webform_wizard_page\n  '#title': 'Page 3'\n  '#open': true\n  '#prev_button_label': '< Back'\n  '#next_button_label': 'Next >'\n  firstname:\n    '#type': textfield\n    '#title': Firstname\n  lastname:\n    '#type': textfield\n    '#title': Lastname\n  address:\n    '#type': textfield\n    '#title': Address\n  plz:\n    '#type': number\n    '#title': PLZ\n    '#minlength': '4'\n    '#maxlength': '4'\n    '#min': '1000'\n    '#max': '9993'\n    '#step': '1'\n  town:\n    '#type': textfield\n    '#title': Town"
 css: ''
 javascript: ''
 settings:
@@ -101,8 +99,8 @@ settings:
   draft_pending_single_message: ''
   draft_pending_multiple_message: ''
   confirmation_type: page
-  confirmation_title: ''
-  confirmation_message: ''
+  confirmation_title: 'Welcome at DOBEE.!'
+  confirmation_message: 'You&#39;re in! The account has been created. We&nbsp;<strong>sent you an email</strong>&nbsp;to confirm the registration.'
   confirmation_url: ''
   confirmation_attributes: {  }
   confirmation_back: true
@@ -175,12 +173,4 @@ access:
     roles: {  }
     users: {  }
     permissions: {  }
-handlers:
-  user_registration:
-    id: userRegistrationHandler
-    label: 'User Registration'
-    handler_id: user_registration
-    status: true
-    conditions: {  }
-    weight: 0
-    settings: {  }
+handlers: {  }
